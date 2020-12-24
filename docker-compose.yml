@@ -1,0 +1,15 @@
+version: '3'
+services:
+  app:
+    container_name: frourio_test_app
+    image: frourio_test_app:latest
+    build: docker/app
+    volumes:
+      - ./:/opt/app
+    ports:
+      - 13000:13000
+      - 13001:13001
+    environment:
+      SERVER_HOST: '0.0.0.0'
+      SERVER_PORT: 13001
+      NEXT_LISTEN_PORT: 13000
