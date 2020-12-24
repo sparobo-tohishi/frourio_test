@@ -34,6 +34,37 @@ app$ cd server
 app$ npm install
 ```
 
+## 環境変数設定
+
+### APIサーバー
+
+```sh
+$ cd /path/to/server
+$ cp .env.example .env
+$ vim .env
+```
+
+```
+SERVER_PORT=13001
+BASE_PATH=/api
+API_ORIGIN=http://localhost:13001
+JWT_SECRET=supersecret
+USER_ID=id
+USER_PASS=pass
+```
+
+### DB
+
+```sh
+$ cd /path/to/server/prisma
+$ cp .env.example .env
+$ vim .env
+```
+
+```
+DATABASE_URL=file:./dev.db
+```
+
 ## ビルド
 
 ```sh
@@ -55,7 +86,7 @@ $ open http://localhost:13000
 
 # 開発時
 
-* `npm run dev`を実行することで、サーバーが起動し、同時に関連ファイルがwatch状態になるので、自動的にビルドされる
+* `npm run dev`を実行することで、サーバーが起動し、同時に関連ファイルが`watch`状態になるので、自動的にビルドされる
 * 終了する際は`Ctrl + c`でプロセスを停止
 
 ```sh
