@@ -51,11 +51,13 @@ $ open http://localhost:13000
 
 # 開発時
 
+* `npm run dev`を実行することで、サーバーが起動し、同時に関連ファイルがwatch状態になるので、自動的にビルドされる
+
 ```sh
 $ docker-compose exec app sh
 
 app$ cd /opt/app/my_frourio_test
-app$ npm dev # 関連ファイルがwatch状態になるので、自動的にビルドされる
+app$ npm run dev
 ```
 
 # サーバーのホスト・ポートを変更
