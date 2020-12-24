@@ -52,6 +52,7 @@ $ open http://localhost:13000
 # 開発時
 
 * `npm run dev`を実行することで、サーバーが起動し、同時に関連ファイルがwatch状態になるので、自動的にビルドされる
+* 終了する際は`Ctrl + c`でプロセスを停止
 
 ```sh
 $ docker-compose exec app sh
