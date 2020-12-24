@@ -38,7 +38,7 @@ app$ npm install
 
 ```sh
 app$ cd /opt/app/my_frourio_test
-app$ npm build
+app$ npm run build
 ```
 
 ## アプリケーション起動
